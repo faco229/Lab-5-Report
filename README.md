@@ -25,7 +25,13 @@ As always, before starting any lab, measure the resistances of the different res
   <b>Figure 1:</b> MEASURING TRUE RESISTOR MEASUREMENTS
 </p>
 
-TABLE 1: Pre-Lab Resistance Measurements
+
+| Expected Resistance (Ohms) | Measured Resistance (Ohms) |
+|---------------------------|---------------------------|
+| 330                       | 324.7                     |
+| 10                        | 9.9                      |
+
+**TABLE 1: Pre-Lab Resistance Measurements**
 
 The first task involves uploading a program to blink an LED, converting analog inputs to digital signals, and understanding pulse width modulation. The first part of the task includes assembling the RedBoard and breadboard, connecting the RedBoard to the computer, selecting the correct board and COM port in the Arduino IDE, and downloading the blink program. 
 Once the RedBoard and breadboard have been constructed as well as properly hooking the redboard up to the laptop and installing the blink program the first circuit can be constructed. 
@@ -134,7 +140,13 @@ In Part 2, the difference between analog and digital signals was explored. Analo
 
 In Part 3, replacing the potentiometer with a photoresistor allowed the LED to turn on and off based on light exposure. The LED responded immediately to changes in light, turning on when the photoresistor was covered and off when uncovered. This behavior was due to the threshold set in the code to turn on the LED if the photoresistor read below 600.
 
-TABLE 2: ANALOG VALUES FROM PHOTORESISTOR BLOCKAGES
+
+| Object           | Min Analog Value | Max Analog Value |
+|-----------------|-----------------|-----------------|
+| Finger         | 448             | 932             |
+| Paper | 824             | 932             |
+
+**TABLE 2: ANALOG VALUES FROM PHOTORESISTOR BLOCKAGES**
 
 In Part 4, using PWM to control the LED brightness involved mapping the potentiometer's voltage range (0 to 1023) to a PWM value range (0 to 255). Increasing the pulse width made the LED brighter without flickering, while the period and frequency of the signal remained constant. This demonstrated the effectiveness of PWM in simulating analog output for controlling LED brightness.
 
