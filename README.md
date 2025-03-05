@@ -13,54 +13,116 @@ Faith Cox & Quinn Rison
 This lab aims to introduce the basics of using microcontrollers, specifically through the Arduino platform. Participants will use the Arduino IDE software to program and upload code to the RedBoard controller from the SparkFun inventor’s kit. The lab involves controlling an LED's intensity using a timer, comparing circuit, and Pulse Width Modulation (PWM). Arduino's extensive documentation and community support are valuable resources for troubleshooting.
 The Arduino system includes both hardware and software, with different boards using various microcontrollers and peripherals. The lab also incorporates a photoresistor, which changes resistance based on light exposure. PWM is used to generate analog signals from digital codes by adjusting the duty cycle, allowing digital outputs to simulate analog signals effectively. This technique is crucial for controlling devices like LEDs.
 
-FIGURE 8: EXPLAINATION OF INPUTS AND OUTPUTS
-
 ---
 
 ## Methods / Tests
 This lab exercise aims to familiarize participants with the Arduino IDE and RedBoard (Arduino UNO). The required components include a 330Ω resistor, an oscilloscope, a computer running Arduino IDE,  RedBoard, photoresistor, LED, 10 kΩ potentiometer, momentary button, and 10 kΩ resistors.
 As always, before starting any lab, measure the resistances of the different resistors that will be used in the lab. This is important to confirm participants are using the correct resistor as well as to compare to the theoretical values or for calculations. The measured vs. expected resitances table is shown below:
 
-FIGURE 1: MEASURING TRUE RESISTOR MEASUREMENTS
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%201.jpg" width="500">
+  <br>
+  <b>Figure 1:</b> MEASURING TRUE RESISTOR MEASUREMENTS
+</p>
+
 TABLE 1: Pre-Lab Resistance Measurements
 
 The first task involves uploading a program to blink an LED, converting analog inputs to digital signals, and understanding pulse width modulation. The first part of the task includes assembling the RedBoard and breadboard, connecting the RedBoard to the computer, selecting the correct board and COM port in the Arduino IDE, and downloading the blink program. 
 Once the RedBoard and breadboard have been constructed as well as properly hooking the redboard up to the laptop and installing the blink program the first circuit can be constructed. 
 The first circuit should look as follows:
 
-SCHEMATIC 1: PART 1-SIMPLE LED CIRCUIT
-FIGURE 2: PART 1- SIMPLE LED CIRCUIT ASSEMBLED
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Schematic%201.jpg" width="500">
+  <br>
+  <b>Schematic 1:</b> PART 1-SIMPLE LED CIRCUIT
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%202.jpg" width="500">
+  <br>
+  <b>Figure 2:</b> PART 1-SIMPLE LED CIRCUIT ASSEMBLED
+</p>
+
 
 When running the blink program, record what it does. Analyze the code and try to understand what each section of the code is trying to accomplish. The provided code is shown below:
 
-CODE 1:PART 1-PROVIDED CODE
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Code%201.png" width="500">
+  <br>
+  <b>Code 1:</b> PART 1-PROVIDED CODE
+</p>
+
 
 The next task is going to involve controlling the LED with a potentiometer. To do so, the sample program "Analog Read Serial" will need to be opened and run on the Arduino. First, ensure the previous circuit remains intact and connect the potentiometer to power (5V and Ground) with the variable resistance pin connected to A0. Detailed instructions for this connection can be found in the program.
 The circuit should look as follows:
 
-SCHEMATIC 2: PART 2- CIRCUIT WITH POTENTIOMETER
-FIGURE 3: PART 2- CIRCUIT THAT COONTROLS LED WITH POTENTIOMETER
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Schematic%202.jpg" width="500">
+  <br>
+  <b>Schematic 2:</b> PART 2- CIRCUIT WITH POTENTIOMETER
+</p>
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%203.jpg" width="500">
+  <br>
+  <b>Figure 3:</b> PART 2- CIRCUIT THAT CONTROLS LED WITH POTENTIOMETER
+</p>
 
 Next, demonstrate the program's proper operation using the serial monitor, ensuring the Baud Rate is set to 9600bps. Finally, modify the code to control the LED, adjusting the blinking time based on the value read from the potentiometer.  The following code is the code that has been modified to meet these requirements:
 
-CODE 2: PART 2- CODE FOR POTENTIOMETER CIRCUIT
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Code%202.png" width="500">
+  <br>
+  <b>Code 2:</b> PART 2- CODE FOR POTENTIOMETER CIRCUIT
+</p>
 
 The third task is now going to involve controlling the LED with a photoresistor. To start, the program from part 2 is modified by replacing the potentiometer with a photoresistor in series with a 10 kΩ resistor. The 5V pin is connected to the photoresistor, ground to the resistor, and A0 to the node between them. The analog input is connected to the node between the photodetector and the resistor. The circuit should look as follows: 
 
-SCHEMATIC 3: PART 3- CIRCUIT WITH POTENTIOMETER AND PHOTORESISTOR
-FIGURE 3: PART 2- CIRCUIT THAT CONTROLS LED WITH POTENTIOMETER
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Schematic%203.jpg" width="500">
+  <br>
+  <b>Schematic 3:</b> PART 3- CIRCUIT WITH POTENTIOMETER AND PHOTORESISTOR
+</p>
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%203.jpg" width="500">
+  <br>
+  <b>Figure 3:</b> PART 3- CIRCUIT THAT CONTROLS LED WITH POTENTIOMETER
+</p>
 
 Different objects are used to block the light on the photoresistor to determine the minimum and maximum analog values detectable with this circuit. An if-else statement is used to turn on the LED only when the brightness sensed by the photoresistor is low, similar to how a night light operates.
 
-FIGURE 4: PART 3-CIRCUIT THAT CONTROLS LED WITH PHOTORESISTOR
-FIGURE 5: PART- PAPER BLOCKING PHOTORESISTOR
-FIGURE 6: PART 3: THUMB COVERING PHOTORESISTOR
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%204.jpg" width="500">
+  <br>
+  <b>Figure 4:</b> PART 3- CIRCUIT THAT CONTROLS LED WITH PHOTORESISTOR
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%205.jpg" width="500">
+  <br>
+  <b>Figure 5:</b> PART 3- PAPER BLOCKING PHOTORESISTOR
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%206.jpg" width="500">
+  <br>
+  <b>Figure 6:</b> PART 3- THUMB COVERING PHOTORESISTOR
+</p>
 
 The fourth part of the lab involves creating an LED dimmer using Pulse Width Modulation (PWM). The circuit from Part 2, which includes the potentiometer, is used again. The LED pin is changed to one that supports PWM. One of the PWM pins would be one of the pins on the right-hand side of the Arduino with a small line beside it. For example, -9, -6, -5, and -3 are all usable. 
 
 The voltage from the potentiometer is read and mapped from a range of 0 to 1023 to a range of 0 to 255 using the map(value, fromLow, fromHigh, toLow, toHigh) function. This mapped value is then written to the LED pin using the analogWrite(pin, mappedvalue) function, allowing the LED brightness to be adjusted based on the potentiometer's position.
 
-CODE 2: PART 4- LED DIMMER USING PWM CODE
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Code%202.png" width="500">
+  <br>
+  <b>Code 2:</b> PART 4- LED DIMMER USING PWM CODE
+</p>
 
 ---
 
@@ -76,8 +138,18 @@ TABLE 2: ANALOG VALUES FROM PHOTORESISTOR BLOCKAGES
 
 In Part 4, using PWM to control the LED brightness involved mapping the potentiometer's voltage range (0 to 1023) to a PWM value range (0 to 255). Increasing the pulse width made the LED brighter without flickering, while the period and frequency of the signal remained constant. This demonstrated the effectiveness of PWM in simulating analog output for controlling LED brightness.
 
-FIGURE 7: PART 4- OSCILLOSCOPE RESULTS WHEN CONNECTED TO LED
 
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%207.jpg" width="500">
+  <br>
+  <b>Figure 7:</b> PART 4- OSCILLOSCOPE RESULTS WHEN CONNECTED TO LED
+</p>
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-5-Report/blob/main/Figure%208.jpg" width="500">
+  <br>
+  <b>Figure 8:</b> EXPLANATION OF INPUTS AND OUTPUTS
+</p>
 ---
 
 ## Discussion
