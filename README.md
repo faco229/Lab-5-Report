@@ -229,7 +229,9 @@ Pulse width gets bigger (changes the average of the whole signal) as LED gets br
 
 ## Conclusion
 
+This lab served as an introduction to microcontrollers, particularly the Arduino RedBoard, and their ability to process both digital and analog signals for practical purposes and problems. Through various circuit implementations, we examined how microcontrollers utilize Pulse Width Modulation (PWM) to simulate analog outputs, how sensors (potentiometers and photoresistors) can influence external components, and how digital logic is applied in real-world electronics. The experiment highlighted the importance of persistence of vision when dealing with high-frequency LED blinking, displaying how rapid state changes can appear as continuous signals to the human eye. Additionally, working with both digital and analog signals reinforced the understanding that while digital signals operate with distinct HIGH and LOW states, analog signals offer a continuous range of values, which is crucial in sensor-based applications.
 
+Beyond theoretical knowledge, this lab also emphasized practical troubleshooting, circuit assembly, and programming within the Arduino IDE. Measuring resistor values before circuit construction emphasized the importance of component testing to ensure accuracy in electronic designs. Modifying the provided Arduino codes helped enhance the understanding of coding structures, including the use of setup() and loop() functions. In addition, analyzing oscilloscope readings while adjusting PWM confirmed the role of duty cycles in controlling brightness levels. Overall, the lab effectively demonstrated how microcontrollers act as the "brain" of modern embedded systems, providing a foundation for more advanced electronic applications.
 
 
 **Citations**
