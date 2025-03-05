@@ -149,13 +149,21 @@ Pulse width gets bigger (changes the average of the whole signal) as LED gets br
 
 
 **Citations**
+
 Introduction - Copilot. (2025). Summary of Arduino Microcontroller Lab. Retrieved from [Quinn’s conversation with Copilot].
+
 Part of Methods - Copilot. (2025). Summary of Arduino Lab Exercise. Retrieved from [Quinn’s conversation with Copilot].
+
 Copilot. (2025). Summary of Arduino Analog Read Serial Task. Retrieved from [Quinn’s conversation with Copilot].
+
 Copilot. (2025). Summary of Arduino Photoresistor Task. Retrieved from [Quinn’s conversation with Copilot].
+
 Copilot. (2025). Summary of Arduino LED Dimmer Task. Retrieved from [Quinn’s conversation with Copilot].
+
 Copilot. (2025). Summary of Arduino Lab Discussion Questions. Retrieved from [Quinn’s conversation with Copilot].
+
 Copilot. (2025). Summary of Arduino Lab Results. Retrieved from [Quinn’s conversation with Copilot].
+
 SparkFun Electronics. (2024). Blink Example Code. Retrieved from https://www.sparkfun.com
 
 ---
